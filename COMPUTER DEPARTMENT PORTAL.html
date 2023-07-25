@@ -1,0 +1,511 @@
+SOURCE CODE
+<?php
+session_start();
+include "connect.php";
+?>
+<!DOCTYPE html>	
+<html lang="en">
+<head>
+	<title>Yaba College Of Technology Portal</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Yabatech Computer department Portals">
+	<meta name="keywords" content="Yabatech Computer department Portals">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery/jquery-1.11.3.min.js"></script>
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="http://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/docs/3.3/examples/signin/signin.css" rel="stylesheet">
+  <link href="http://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <!-- file input css -->
+  <link rel="stylesheet" type="text/css" href="assets/fileinput/css/fileinput.min.css">
+	<!-- Favicon -->   
+	<link href="img/yabatech.jpg" rel="shortcut icon"/>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/themify-icons.css"/>
+	<link rel="stylesheet" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
+	<link rel="stylesheet" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <title>Registration</title>
+      <style>
+.kv-avatar .krajee-default.file-preview-frame,.kv-avatar .krajee-default.file-preview-frame:hover {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+.kv-avatar {
+    display: inline-block;
+}
+.kv-avatar .file-input {
+    display: table-cell;
+    width: 213px;
+}
+.kv-reqd {
+    color: red;
+    font-family: monospace;
+    font-weight: normal;
+}
+</style>
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	<!-- header section -->
+	<header class="header-section">
+		<div class="container">
+			<!-- logo -->
+			<a href="index.html" class=""><img src="img/yabatech.jpg" alt=""> <FONT size="5" face="Algerian" color="green">Yaba College Of Technology </FONT></a>
+			<div class="nav-switch">
+				<i class="fa fa-bars"></i>
+			</div>
+			<div class="header-info">
+				<div class="hf-item">
+					<i class="fa fa-phone"></i>
+					<p><span>234-7037431055</span> </p>
+				</div>
+				<div class="hf-item">
+					<i class="fa fa-envelope"></i>
+					<p><span>registrar@yabatech.edu.ng</span></p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header section end-->
+	<!-- Header section  -->
+	<nav class="nav-section" style="background-color: green; ">
+		<div class="container" style="background-color: green;">
+			<div class="nav-right">
+				<a href=""><i class="fa fa-search"></i></a>
+				<button type="button" data-toggle="modal" data-target="#myModal" style="background-color: green; border:0; color: white"><i class="fa fa-sign-in"></i></button>
+				<button type="button"  data-toggle="modal" data-target="#myModal1"style="background-color: green; border:0; color: white"><i class="fa fa-user-plus"></i></button>
+				<button type="button"  data-toggle="modal" data-target="#myModal3"style="background-color: green; border:0; color: white"><i class="fa fa-user-circle"></i></button>
+			</div>
+			<ul class="main-menu">
+				<li class="active"><a href="index.php">Technology</a></li>
+				<li><a href="about.html">About Us</a></li>
+        <li><a href="Staff.php">Staffs</a></li>
+				<li><a href="blog.php">Event</a></li>
+				<li><a href="course.html">Curriculum</a></li>
+				<li><a href="Requirement.html">Requirements</a></li>
+				<!--<li><a href="blog.html">blog</a></li>-->
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- Header section end -->
+	<!-- Hero section -->
+	<section class="hero-section">
+		<div class="hero-slider owl-carousel">
+			<div class="hs-item set-bg" data-setbg="img/hero-slider/1.jpg">
+				<div class="hs-text">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="hs-subtitle">Yaba College Of Technology</div>
+								<h2 class="hs-title">Cradle for knowledge pays the best interest.</h2>
+								<p class="hs-des">Education is not just about going to school and getting a degree. It's about widening your<br> knowledge and absorbing the truth about life. Knowledge is power.</p>
+								<div class="site-btn">GET STARTED</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hs-item set-bg" data-setbg="img/hero-slider/2.jpg">
+				<div class="hs-text">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<div class="hs-subtitle">CITM</div>
+								<h2 class="hs-title">ODEWUNMI AZEEZ OLADIMEJI, OLAREWAJU TEMITOPE QUADRI</h2>
+								<p class="hs-des">Step by Step Solution to solve a problem</p>
+								<div class="site-btn">GET STARTED</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+	<!-- Counter section  -->
+	<!--<section class="counter-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-6">
+					<div class="big-icon">
+						<i class="fa fa-graduation-cap"></i>
+					</div>
+					<div class="counter-content">
+						<h2>NEXT COUSRE: Sales & Marketing Alignment</h2>
+						<p><i class="fa fa-calendar-o"></i>07:00 PM - 09:00 PM</p>
+					</div>
+				</div>
+				<div class="col-lg-5 col-md-6">
+					<div class="counter">
+						<div class="counter-item"><h4>20</h4>Days</div>
+						<div class="counter-item"><h4>08</h4>Hrs</div>
+						<div class="counter-item"><h4>40</h4>Mins</div>
+						<div class="counter-item"><h4>56</h4>secs</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>-->
+	<!-- Counter section end -->
+<!-- login start-->
+
+ <!-- Modal --><!--login-->
+<!--   <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Admin Login</h4>
+        </div>
+        <div class="modal-body">
+            <form method="post" action=""  class="form-signin" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <input type="text" id="matricnumber" name="staffid" class="form-control" placeholder="Enter Admin ID" value="">
+        </div>
+
+           <div class="form-group">
+          <input type="password" id="surname" name="surname" class="form-control" placeholder="************" value="">
+        </div>
+
+              <div class="form-group">
+          <button class="site-btn" name="login1">Login</button>
+          </div>
+         </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> --><!-- login start-->
+
+
+				<!-- student reg start-->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog fixed">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Student Registration</h4>
+      </div>
+
+ <form method="post" action=""  class="form-signin" enctype="multipart/form-data">
+        <!-- display validation errors here-->
+    <h2 class="form-signin-heading text-center">Registration Form</h2>
+        
+    <div class="form-group">
+      <label for="exampleInputPassword1">Photo</label>
+      <div id="kv-avatar-errors-2" class="center-block" style="width:800px;display:none">
+      </div>
+
+       <div class="row">
+        <div class="col-sm-4 text-center">
+            <div class="kv-avatar">
+                <div class="file-loading">
+                    <input id="avatar-2" name="f1" type="file" >
+                </div>
+            </div>
+        </div>
+          <div class="form-group">
+          
+          <input type="text" id="name" name="surname" class="form-control" placeholder="Enter Surname" value="" >
+        </div>
+
+         <div class="form-group">
+          <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Enter Firstname " value="" >
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Enter Lastname" value="">
+        </div>
+
+          <div class="form-group">
+          <input type="text" id="Phonenumber" name="phonenumber" class="form-control" placeholder="Enter Phonenumber" value="">
+</div>
+
+        <div class="form-group">
+          <input type="text" id="matricnumber" name="matricnumber" class="form-control" placeholder="Enter Matric Number" value="">
+        </div>
+
+       <div class="form-group">
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" name="email" placeholder="Email address" required autofocus value=""></div>
+         
+         <div class="form-group">
+          <textarea type="text" id="name" name="homeaddress" class="form-control" placeholder="Enter Home Address" value=" "></textarea>
+        </div>
+
+        <div class="form-check">
+  <input class="form-check-input" type="radio" name="sex" id="sex" value="female" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   female
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="sex" id="sex" value="male">
+  <label class="form-check-label" for="exampleRadios2">
+    male
+  </label>
+</div>
+
+         <div class="form-group">
+          <input type="text" id="parentname" name="parentname" class="form-control" placeholder="Enter Parent name" value="">
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="parentnumber" name="parentnumber" class="form-control" placeholder="Enter Parent number" value="">
+        </div>
+
+        <div class="form-group">
+        <select class="form-control" id="level" name="level" value="">
+    <option value="">Choose Level</option>
+  <option value="ND 1">ND 1</option>
+    <option value="ND 2">ND 2</option>
+    <option value="HND 1">HND 1</option>
+    <option value="HND 2">HND 2</option>
+
+  </select>
+</div>
+  <div class="form-group">
+       <select name="State" class="form-control">
+                <option value="none">-- Select State --</option>
+                <option value="Abia State">Abia State</option>
+                <option value="Adamawa State">Adamawa State</option>
+                <option value="Akwa-Ibom State">Akwa-Ibom State</option>
+                <option value="Anambra State">Anambra State</option>
+                <option value="Bauchi State">Bauchi State</option>
+                <option value="Benue State">Benue State</option>
+                <option value="Borno State">Borno State</option>
+                <option value="Cross River State">Cross River</option>
+                <option value="Delta State">Delta State</option>
+                <option value="Ebonyi State">Ebonyi State</option>
+                <option value="Edo State">Edo State</option>
+                <option value="Ekiti State">Ekiti State</option>
+                <option value="Enugu State">Enugu State</option>
+                <option value="Gombe State">Gombe State</option>
+                <option value="Imo State">Imo State</option>
+                <option value="Jigawa State">Jigawa State</option>
+                <option value="Kaduna State">Kaduna State</option>
+                <option value="Kano State">Kano State</option>
+                <option value="Kebbi State">Kebbi State</option>
+                <option value="Kogi State">Kogi State</option>
+                <option value="Kwara State" >Kwara State</option>
+                <option value="Lagos State">Lagos State</option>
+                <option value="Niger State">Niger State</option>
+                <option value="Ogun State">Ogun State</option>
+                <option value="Ondo State">Ondo State</option>
+                <option value="Osun State">Osun State</option>
+                <option value="Oyo State">Oyo State</option>
+                <option value="Plateau State">Plateau State</option>
+                 <option value="Rivers State">Rivers State</option>
+                  <option value="Sokoto State">Sokoto State</option>
+                   <option value="Taraba State">Taraba State</option>
+                    <option value="Yobe State">Yobe State</option>
+                     <option value="Zamfara State">Zamfara State</option>
+                      <option value="FCT Abuja">Abuja</option>
+
+              </select>
+</div>
+    <div class="form-group">
+ Date of Birth <input type="date" name="date" id="date" class="form-control">
+</div>
+			<div class="form-group">
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit" style="background-color: green">Sign in</button>
+    </div>
+      </form>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</form>
+</div>
+ </div>
+    </div>
+
+  </div>
+</div><!--student reg-->
+<!-- login start-->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog fixed">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Student Login</h4>
+
+          <ul class="nav nav-tabs">
+    <li><a data-toggle="tab" href="#menu1">Staff</a></li>
+    <li><a data-toggle="tab" href="#menu2">Student</a></li>
+
+  </ul>
+      </div>
+      <div class="modal-body">
+      	<div class="tab-content">
+
+      		<div id="menu1" class="tab-pane fade">
+           		<form method="post" action=""  class="form-signin" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <input type="text" id="staffid" name="staffid" class="form-control" placeholder="Enter staff-id" value="">
+        </div>
+
+           <div class="form-group">
+          <input type="password" id="surname" name="surname" class="form-control" placeholder="************" value="">
+        </div>
+
+        			<div class="form-group">
+        	<button class="site-btn" name="login1">Login</button>
+        	</div>
+   			 </form>
+
+    </div>
+      		<!--login -->
+      		<div id="menu2" class="tab-pane fade">
+      		<form method="post" action=""  class="form-signin" enctype="multipart/form-data">
+
+        <div class="form-group">
+          <input type="text" id="matricnumber" name="matricnumber" class="form-control" placeholder="Enter Matric Number" value="">
+        </div>
+
+           <div class="form-group">
+          <input type="password" id="surname" name="surname" class="form-control" placeholder="************" value="">
+        </div>
+
+        			<div class="form-group">
+        	<button class="site-btn" name="login2">Login</button>
+        	</div>
+   			 </form>
+			</div>
+       		 <!--login-->
+       		</div>
+      </div>
+      <div class="modal-footer">
+      	<i style="color: red;">Default Password is Surname</i>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div><!--login-->
+	<!-- Services section -->
+	<section class="service-section spad">
+		<div class="container services">
+			<div class="section-title text-center">
+				<h3>OUR SERVICES</h3>
+				<p>We provides the opportunity to prepare for Education</p>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6 service-item">
+					<div class="service-icon">
+						<img src="img/services-icons/1.png" alt="1">
+					</div>
+					<div class="service-content">
+						<h4>College Hall</h4>
+						<!--<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>-->
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 service-item">
+					<div class="service-icon">
+						<img src="img/services-icons/2.png" alt="1">
+					</div>
+					<div class="service-content">
+						<h4>Great Facility</h4>
+						<!--<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>-->
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 service-item">
+					<div class="service-icon">
+						<img src="img/services-icons/3.png" alt="1">
+					</div>
+					<div class="service-content">
+						<h4>Activity Hub</h4>
+						<!--<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>-->
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 service-item">
+					<div class="service-icon">
+						<img src="img/services-icons/4.png" alt="1">
+					</div>
+					<div class="service-content">
+						<h4>Fully Qualified Lecturers</h4>
+			<!--<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>-->
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 service-item">
+					<div class="service-icon">
+						<img src="img/services-icons/5.png" alt="1">
+					</div>
+					<div class="service-content">
+						<h4>Flexible Schedule</h4>
+						<!--<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>-->
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 service-item">
+					<div class="service-icon">
+						<img src="img/services-icons/6.png" alt="1">
+					</div>
+					<div class="service-content">
+						<h4>Computer Lab</h4>
+						<!--<p>Lorem ipsum dolor sitdo amet, consectetur dont adipis elit. Vivamus interdum ultrices augue. Aenean dos cursus lania.</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services section end -->
+
+	
+	<!-- Enroll section -->
+	<section class="enroll-section spad set-bg" data-setbg="img/enroll-bg.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="section-title text-white">
+						<h3>ENROLLMENT</h3>
+						<p>Apply for Yaba College Of Technology by</p>
+					</div>
+					<div class="enroll-list text-white">
+						<div class="enroll-list-item">
+							<span>1</span>
+							<h5>Online Application</h5>
+							<p>Click on Apply for Online Application then select the Program (FT/PT) and choose the Venue For Lectures (EPE,YABA)</p>
+						</div>
+						<div class="enroll-list-item">
+							<span>2</span>
+							<h5>Payments</h5>
+							<p>All Payment gateway is via Remita, The college would not be responsible in any third party payments</p>
+						</div>
+						<div class="enroll-list-item">
+							<span>3</span>
+							<h5>Register</h5>
+							<p>Fill the required informations properly, any Alteration would be fined and any Fake info your Admission would forfeited.Thanks</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 offset-lg-1 p-lg-0 p-4">
+					<img src="img/encroll-img.jpg" alt="">
+
